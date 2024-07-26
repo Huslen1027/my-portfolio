@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.3.17",
+    "locomotive-scroll": "^4.1.4",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "sass": "^1.77.8"
   }
 }
