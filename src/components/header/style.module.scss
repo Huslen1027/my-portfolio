@@ -84,14 +84,17 @@
         left: 50%;
       }
     }
+    a {
+      cursor: pointer;
+    }
   }
 }
 .headerButtonContainer {
   transform: scale(1);
   position: fixed;
-
-  right: 0px;
   z-index: 4;
+  right: 0px;
+
   .button {
     margin: 20px;
     display: flex;

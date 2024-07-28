@@ -7,6 +7,7 @@ const Index = () => {
   const header = useRef(null);
   const button = useRef(null);
   const [isActive, setIsActive] = useState(false);
+
   return (
     <>
       <div ref={header} className={styles.header}>
@@ -34,22 +35,23 @@ const Index = () => {
             <div className={styles.indicator}></div>
           </div>
         </div>
-        <div ref={button} className={styles.headerButtonContainer}>
+      </div>
+      <div ref={button} className={styles.headerButtonContainer}>
+        <div
+          onClick={() => {
+            setIsActive(!isActive);
+          }}
+          className={`${styles.button}`}
+        >
           <div
-            onClick={() => {
-              setIsActive(!isActive);
-            }}
-            className={styles.button}
-          >
-            <div
-              className={`${styles.burger} ${
-                isActive ? styles.burgerActive : ""
-              }`}
-            ></div>
-          </div>
+            className={`${styles.burger} ${
+              isActive ? styles.burgerActive : ""
+            }`}
+          ></div>
         </div>
       </div>
-      <AnimatePresence>{isActive && <Nav />}</AnimatePresence>
+
+      <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
     </>
   );
 };
