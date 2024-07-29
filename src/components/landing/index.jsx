@@ -9,7 +9,7 @@ import Image from "next/image";
 const Index = () => {
   return (
     <div className={styles.landing}>
-      <Image alt="backround" src="/images/backround.png" fill={true} />
+      <Image alt="background" src="/images/backround.png" fill={true} />
       <div></div>
       <div>
         <svg

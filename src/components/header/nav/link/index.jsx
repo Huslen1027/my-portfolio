@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../animation";
 
-export default function Index({ data, isActive, setSelectedIndicator }) {
+const Index = ({ data, isActive, setSelectedIndicator }) => {
   const { title, href, index } = data;
 
   return (
@@ -26,4 +26,5 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
       <Link href={href}>{title}</Link>
     </motion.div>
   );
-}
+};
+export default Index;
