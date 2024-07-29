@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import React from "react";
-const Index = () => {
+const Curve = () => {
   const initialPath = `M100 0 L100 ${window.innerHeight} Q-100 ${
     window.innerHeight / 2
   } 100 0`;
@@ -34,4 +34,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Curve;

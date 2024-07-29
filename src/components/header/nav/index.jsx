@@ -3,9 +3,9 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "../animation";
-import Link from "./Link/index";
-import Curve from "./Curve/index";
-import Footer from "./footer/index";
+import NavLink from "./link";
+import Curve from "./curve";
+import NavFooter from "./footer";
 
 const navItems = [
   {
@@ -50,16 +50,16 @@ const Index = () => {
           </div>
           {navItems.map((data, index) => {
             return (
-              <Link
+              <NavLink
                 key={index}
                 data={{ ...data, index }}
                 isActive={selectedIndicator == data.href}
                 setSelectedIndicator={setSelectedIndicator}
-              ></Link>
+              ></NavLink>
             );
           })}
         </div>
-        <Footer />
+        <NavFooter />
       </div>
       <Curve />
     </motion.div>

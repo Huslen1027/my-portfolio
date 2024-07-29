@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 
-const Index = () => {
+const NavFooter = () => {
   return (
     <div className={styles.footer}>
       <a>Awwwards</a>
@@ -11,4 +11,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default NavFooter;
