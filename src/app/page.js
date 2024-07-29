@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Landing from "../components/landing";
-import Project from "../components/projects";
 import styles from "./page.module.scss";
 export default function Home() {
   useEffect(() => {
