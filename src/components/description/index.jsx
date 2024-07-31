@@ -1,5 +1,7 @@
+import styles from "./style.module.scss";
+
 const Index = () => {
-  return <div></div>;
+  return <div className={styles.container}></div>;
 };
 
 export default Index;

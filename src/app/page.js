@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Landing from "../components/landing";
 import styles from "./page.module.scss";
+import Description from "../components/description";
 export default function Home() {
   useEffect(() => {
     (async () => {
