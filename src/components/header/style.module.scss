@@ -1,15 +1,15 @@
 .header {
   position: absolute;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px;
   z-index: 1;
+  top: 0;
+  color: white;
+  padding: 35px;
+  justify-content: space-between;
   width: 100%;
   font-weight: 300;
-  background-color: white;
   box-sizing: border-box;
-  top: 0;
+  align-items: center;
 
   .logo {
     display: flex;
@@ -21,9 +21,9 @@
     .name {
       display: flex;
       position: relative;
-      margin-left: 5px;
-      white-space: nowrap;
       overflow: hidden;
+      white-space: nowrap;
+      margin-left: 5px;
       transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
       p {
         position: relative;
@@ -32,9 +32,9 @@
           padding-left: 0.3em;
         }
         &:nth-of-type(3) {
-          padding-left: 0.3em;
           position: absolute;
           left: 120px;
+          padding-left: 0.3em;
         }
       }
     }
@@ -63,9 +63,9 @@
     .el {
       display: flex;
       flex-direction: column;
-      padding: 15px;
       position: relative;
       z-index: 1;
+      padding: 15px;
       cursor: pointer;
       &:hover {
         .indicator {
@@ -73,15 +73,15 @@
         }
       }
       .indicator {
-        transform: scale(0) translateX(-50%);
-        transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
         position: absolute;
-        background-color: rgb(103, 41, 41);
         width: 5px;
         height: 5px;
-        border-radius: 50%;
         top: 45px;
         left: 50%;
+        background-color: white;
+        border-radius: 50%;
+        transform: scale(0) translateX(-50%);
+        transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
       }
     }
     a {
@@ -92,21 +92,22 @@
 .headerButtonContainer {
   transform: scale(1);
   position: fixed;
-  z-index: 4;
   right: 0px;
+  z-index: 4;
 
   .button {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
     position: relative;
+    margin: 20px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #1c1d20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .burger {
     width: 100%;
     position: relative;
@@ -122,6 +123,7 @@
       position: relative;
       transition: transform 0.3s;
     }
+
     &::after {
       top: -5px;
     }
@@ -130,11 +132,13 @@
       top: 5px;
     }
   }
+
   .burgerActive {
     &::after {
       transform: rotate(45deg);
       top: -1px;
     }
+
     &::before {
       transform: rotate(-45deg);
       top: 0px;

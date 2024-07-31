@@ -1,0 +1,10 @@
+.landing {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
