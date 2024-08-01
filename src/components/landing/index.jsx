@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-const Index = () => {
+export default function Index() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -66,6 +66,4 @@ const Index = () => {
       </div>
     </motion.main>
   );
-};
-
-export default Index;
+}

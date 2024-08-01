@@ -2,7 +2,6 @@
 import styles from "./page.module.scss";
 import { useEffect } from "react";
 import Landing from "../components/Landing";
-import Description from "../components/Description";
 
 export default function Home() {
   useEffect(() => {
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Landing />
-      <Description />
     </main>
   );
 }
