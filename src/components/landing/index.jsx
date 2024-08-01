@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/all";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
-// import { slideUp } from "./animation";
 import Image from "next/image";
 const Index = () => {
   const firstText = useRef(null);
@@ -41,12 +40,7 @@ const Index = () => {
   };
 
   return (
-    <motion.main
-      // initial="initial"
-      // animate="enter"
-      // variants={slideUp}
-      className={styles.landing}
-    >
+    <motion.main className={styles.landing}>
       <Image alt="background" src="/images/laufey.jpg" fill={true} />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
