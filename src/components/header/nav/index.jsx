@@ -26,7 +26,7 @@ const navItems = [
   },
 ];
 
-const Index = () => {
+export default function Index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
@@ -64,6 +64,4 @@ const Index = () => {
       <Curve />
     </motion.div>
   );
-};
-
-export default Index;
+}

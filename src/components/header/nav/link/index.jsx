@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../animation";
 
-const NavLink = ({ data, isActive, setSelectedIndicator }) => {
+export default function NavLink({ data, isActive, setSelectedIndicator }) {
   const { title, href, index } = data;
 
   return (
@@ -26,5 +26,4 @@ const NavLink = ({ data, isActive, setSelectedIndicator }) => {
       <Link href={href}>{title}</Link>
     </motion.div>
   );
-};
-export default NavLink;
+}

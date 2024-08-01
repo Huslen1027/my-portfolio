@@ -1,9 +1,9 @@
 "use client";
-
-import { useEffect } from "react";
-import Landing from "../components/landing";
 import styles from "./page.module.scss";
-import Description from "../components/description";
+import { useEffect } from "react";
+import Landing from "../components/Landing";
+import Description from "../components/Description";
+
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -11,9 +11,11 @@ export default function Home() {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
+
   return (
     <main className={styles.main}>
       <Landing />
+      <Description />
     </main>
   );
 }

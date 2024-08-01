@@ -12,7 +12,7 @@ const Index = () => {
   const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
-  let direction = -1;
+  let direction = 1;
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
