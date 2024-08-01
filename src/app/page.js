@@ -1,7 +1,6 @@
 "use client";
 import styles from "./page.module.scss";
 import { useEffect } from "react";
-import Landing from "../components/Landing";
 
 export default function Home() {
   useEffect(() => {
@@ -11,9 +10,5 @@ export default function Home() {
     })();
   }, []);
 
-  return (
-    <main className={styles.main}>
-      <Landing />
-    </main>
-  );
+  return <main className={styles.main}></main>;
 }
