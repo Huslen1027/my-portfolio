@@ -3,9 +3,9 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "../animation";
-import NavLink from "./link";
-import Curve from "./curve";
-import NavFooter from "./footer";
+import NavLink from "./link/NavLink";
+import NavCurve from "./curve/NavCurve";
+import NavFooter from "./footer/NavFooter";
 
 const navItems = [
   {
@@ -61,7 +61,7 @@ export default function Index() {
         </div>
         <NavFooter />
       </div>
-      <Curve />
+      <NavCurve />
     </motion.div>
   );
 }

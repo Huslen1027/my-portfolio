@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 import Nav from "./nav";
 import { useState, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
-const Index = () => {
+const Header = () => {
   const header = useRef(null);
   const button = useRef(null);
   const [isActive, setIsActive] = useState(false);
@@ -21,6 +21,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+
         <div className={styles.nav}>
           <div className={styles.el}>
             <a>Work</a>
@@ -56,4 +57,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Header;

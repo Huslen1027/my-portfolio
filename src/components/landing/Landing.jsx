@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-export default function Index() {
+export default function Landing() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
