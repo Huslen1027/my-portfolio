@@ -1,9 +1,10 @@
 "use client";
-import styles from "./page.module.scss";
+
 import { useEffect } from "react";
 import Landing from "@/components/landing/Landing";
 import Description from "@/components/description/Description";
 import Project from "../components/projects";
+import MySkills from "../components/mySkills";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -13,10 +14,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={styles.main}>
+    <main>
       <Landing />
       <Description />
       <Project />
+      <MySkills />
     </main>
   );
 }

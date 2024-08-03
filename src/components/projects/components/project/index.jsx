@@ -1,9 +1,10 @@
 "use client";
 import styles from "./style.module.scss";
 import React from "react";
-export default function Index({ index, title, manageModal }) {
+export default function Index({ index, title, manageModal, href }) {
   return (
     <div
+      onClick={(e) => manageModal(true, index, e.clientX, e.clientY, href)}
       onMouseEnter={(e) => {
         manageModal(true, index, e.clientX, e.clientY);
       }}
@@ -13,6 +14,7 @@ export default function Index({ index, title, manageModal }) {
       className={styles.project}
     >
       <h2>{title}</h2>
+
       <p>Front-end Developer</p>
     </div>
   );
