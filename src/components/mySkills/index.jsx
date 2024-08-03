@@ -91,8 +91,8 @@ export default function Index() {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], [0, 220]);
-  const x2 = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const x1 = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
 
   return (
     <div ref={container} className={styles.mySkills}>
