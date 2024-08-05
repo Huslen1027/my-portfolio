@@ -17,7 +17,9 @@ import TailwindIcon from "./icons/Tailwind-icon";
 import CypressIcon from "./icons/Cypress-icon";
 import JestIcon from "./icons/Jest-icon";
 import { useRef } from "react";
+import Chadcn from "./icons/Chadcn-icon";
 import { useScroll, useTransform, motion } from "framer-motion";
+
 const skill1 = [
   {
     title: "HTML",
@@ -82,6 +84,7 @@ const skill2 = [
     title: "React/Next",
     href: <ReactIcon />,
   },
+  { title: "Chadcn", href: <Chadcn /> },
 ];
 
 export default function Index() {
@@ -93,6 +96,7 @@ export default function Index() {
 
   const x1 = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
   return (
     <div ref={container} className={styles.mySkills}>

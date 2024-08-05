@@ -5,6 +5,7 @@ import Landing from "@/components/landing/Landing";
 import Description from "@/components/description/Description";
 import Project from "../components/projects";
 import MySkills from "../components/mySkills";
+import Contact from "../components/contact";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -19,6 +20,7 @@ export default function Home() {
       <Description />
       <Project />
       <MySkills />
+      <Contact />
     </main>
   );
 }

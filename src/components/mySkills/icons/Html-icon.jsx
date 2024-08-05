@@ -4,7 +4,7 @@ export default function HtmlIcon() {
   return (
     <svg
       width="80px"
-      height="100px"
+      height="80px"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
     >
