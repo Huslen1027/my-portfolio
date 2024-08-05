@@ -33,7 +33,7 @@ export default function Description() {
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
           <div className={styles.button}>
-            <p>Rounded me</p>
+            <p>About me</p>
           </div>
         </div>
       </div>

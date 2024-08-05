@@ -89,18 +89,10 @@ const skill2 = [
 
 export default function Index() {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
-
-  const x1 = useTransform(scrollYProgress, [0, 1], [0, 150]);
-  const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
-  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
   return (
     <div ref={container} className={styles.mySkills}>
-      <motion.div style={{ x: x1 }} className={styles.slider}>
+      <motion.div className={styles.slider}>
         {skill1.map((project, index) => (
           <div key={index} className={styles.project}>
             <div className={styles.svgContainer}>
@@ -111,7 +103,7 @@ export default function Index() {
         ))}
       </motion.div>
 
-      <motion.div style={{ x: x2 }} className={styles.slider}>
+      <motion.div className={styles.slider}>
         {skill2.map((project, index) => (
           <div key={index} className={styles.project}>
             <div className={styles.svgContainer}>

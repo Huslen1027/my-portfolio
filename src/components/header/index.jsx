@@ -50,7 +50,7 @@ const Header = () => {
             <div className={styles.name}>
               <p className={styles.codeBy}>Code by</p>
               <p className={styles.Huslen}>Huslen</p>
-              <p className={styles.Laufey}>Laufey</p>
+              <p className={styles.Laufey}>Batzorig</p>
             </div>
           </div>
         </div>
