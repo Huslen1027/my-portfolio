@@ -41,7 +41,7 @@ export default function Landing() {
 
   return (
     <motion.main className={styles.landing}>
-      <Image alt="background" src="/images/laufey.jpg" fill={true} />
+      <Image alt="background" src="/images/zza.jpg" fill={true} />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Front-end Developer -</p>

@@ -2,7 +2,6 @@ import styles from "./style.module.scss";
 import Magnetic from "@/common/Magnetic";
 import { useRef } from "react";
 import Image from "next/image";
-
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRouter } from "next/navigation";
 
@@ -16,11 +15,15 @@ export default function Index() {
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
+
   return (
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
         <div className={styles.title}>
           <span>
+            <div className={styles.imageContainer}>
+              <Image fill alt="image" src={`/background6.jpg`} />
+            </div>
             <h2>Let's work</h2>
           </span>
           <h2>Together</h2>
@@ -30,7 +33,7 @@ export default function Index() {
             </div>
           </motion.div>
           <motion.svg
-            style={{ rotate, scale: 2 }}
+            style={{ rotate, transform: "scale(2)" }}
             width="9"
             height="9"
             viewBox="0 0 9 9"
@@ -60,11 +63,12 @@ export default function Index() {
           </div>
           <div>
             <span>
-              <h3>socials</h3>
+              <h3>Socials</h3>
               <div
                 onClick={() =>
-                  router.push(
-                    "https://www.facebook.com/profile.php?id=100083827608649"
+                  window.open(
+                    "https://www.facebook.com/profile.php?id=100083827608649",
+                    "_blank"
                   )
                 }
                 className={styles.facebook}
@@ -75,7 +79,9 @@ export default function Index() {
               </div>
             </span>
             <div
-              onClick={() => router.push("https://www.instagram.com/husle_1/")}
+              onClick={() =>
+                window.open("https://www.instagram.com/husle_1/", "_blank")
+              }
               className={styles.instagram}
             >
               <Magnetic>
