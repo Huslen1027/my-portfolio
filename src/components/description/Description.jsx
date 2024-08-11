@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
 export default function Description() {
   const phrase =
-    "My name is Huslen and I am a Software-engineer and creative junior based in Ulaanbaatar specializing in identity and Front-end. ";
+    "I am Huslen, a software engineer and creative professional based in Ulaanbaatar, specializing in identity and front-end development ";
   const description = useRef(null);
   const isInView = useInView(description);
 
