@@ -18,7 +18,7 @@ import CypressIcon from "./icons/Cypress-icon";
 import JestIcon from "./icons/Jest-icon";
 import { useRef } from "react";
 import Chadcn from "./icons/Chadcn-icon";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const skill1 = [
   {

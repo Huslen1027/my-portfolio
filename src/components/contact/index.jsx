@@ -34,8 +34,8 @@ export default function Index() {
           </motion.div>
           <motion.svg
             style={{ rotate, transform: "scale(2)" }}
-            width="9"
-            height="9"
+            width="15"
+            height="15"
             viewBox="0 0 9 9"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
